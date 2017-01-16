@@ -5,9 +5,10 @@ $(document).ready(function() {
     clicks($color);
   })
 })
+
 function makeBlock(color) {
-  var $colorCube = $('<div class="color-cube ' + color + '"></div>')
-  $('.container').append($colorCube);
+  var $colorBlock = $('<div class="color-block ' + color + '"></div>')
+  $('.container').append($colorBlock);
 }
 
 
@@ -17,6 +18,29 @@ function clicks(color) {
   $number++;
   $('#' + color).children().text($number);
 }
+
+
+
+
+//Attempt
+// var color;
+// var clicks;
+//
+// $(document).ready(function() {
+//     $('.color-button').on('click', makeBlock);
+// });
+//
+//
+//
+// function makeBlock() {
+//     color = $('.color-button').attr("data-color");
+//     clicks = $('#' + color).text();
+//     clicks = Number(clicks);
+//     clicks++;
+//     $('#' + color).text(clicks);
+//     $('.container').append('<div class="color-cube" '+color+' "></div>');
+// }
+
 
 
 //Attempt
